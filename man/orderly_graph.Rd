@@ -32,7 +32,7 @@ parents until it finds an \code{orderly_config.yml} file.}
 \item{direction}{A string indicating if we want to move up or down the tree
 permitted values are upstream, downstream}
 
-\item{propagate}{A boolean indicating if we want to propogate out of date
+\item{propagate}{A boolean indicating if we want to propagate out of date
 through the tree}
 
 \item{max_depth}{A numeric, how far back should the tree go, this can be
@@ -66,9 +66,9 @@ and need to be re-run.
 
 The tree is built using data from the local report database (see
 \code{\link{orderly_commit}}). This means that it will not find changes from
-a report that has not be run and commited. _i.e._ if a user changes a
+a report that has not be run and committed. _i.e._ if a user changes a
 report to use or create different artefacts this will not be picked up by
-the function until the reports are re-run and commited to the archive.
+the function until the reports are re-run and committed to the archive.
 }
 
 \examples{

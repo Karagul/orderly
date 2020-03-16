@@ -16,9 +16,9 @@
 ##' @section Remark:
 ##' The tree is built using data from the local report database (see
 ##' \code{\link{orderly_commit}}). This means that it will not find changes from
-##' a report that has not be run and commited. _i.e._ if a user changes a
+##' a report that has not be run and committed. _i.e._ if a user changes a
 ##' report to use or create different artefacts this will not be picked up by
-##' the function until the reports are re-run and commited to the archive.
+##' the function until the reports are re-run and committed to the archive.
 ##'
 ##' @title Print the dependency tree for a given report using orderly log
 ##'
@@ -26,7 +26,7 @@
 ##' @param id the id of the report, if omitted, use the id of the latest report
 ##' @param direction A string indicating if we want to move up or down the tree
 ##'        permitted values are upstream, downstream
-##' @param propagate A boolean indicating if we want to propogate out of date
+##' @param propagate A boolean indicating if we want to propagate out of date
 ##'                  through the tree
 ##' @param max_depth A numeric, how far back should the tree go, this can be
 ##'                  useful to truncate a very large tree. (default = 100)
@@ -86,7 +86,7 @@ orderly_graph <- function(name, id = "latest", root = NULL, locate = TRUE,
 ##' @title Given a tree return a list of reports to be re-run (and the order
 ##' that they should be re-run)
 ##'
-##' @param tree A dpendency tree object from orderly_graph_out_of_date
+##' @param tree A dependency tree object from orderly_graph_out_of_date
 ##'
 ##' @return a list of report names to be re-run. First report to rerun first
 ##' @export
